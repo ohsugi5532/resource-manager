@@ -1,0 +1,48 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "prettier"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "prettier",
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-multi-spaces": "error",
+        "comma-dangle": "off",
+        "block-scoped-var": "error",
+        "spaced-comment": "off",
+        "eqeqeq": "error",
+        "no-else-return": "error",
+        "no-implicit-coercion": "error",
+        "no-new": "error",
+        "quotes": ["error", "single"],
+        "no-redeclare": "error",
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "bracketSpacing": true,
+            "trailingComma": "es5",
+            "semi": false,
+            "tabWidth": 2
+          }
+        ]
+    }
+}
